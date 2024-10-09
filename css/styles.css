@@ -7,12 +7,25 @@ body {
 
 ul {
   list-style-type: none;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 a {
   text-decoration: none;
   color: currentColor;
   font-style: normal;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 /* -------------- SHARED-STYLE -------------*/
@@ -39,9 +52,16 @@ a {
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
+
+.container {
+  width: 1158px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
 /* -------------- HEADER ------------------- */
 
 .header {
+  padding: 24px 0;
 }
 .header-navigation {
 }
@@ -91,6 +111,8 @@ a {
 
 .hero-section {
   background-color: #2e2f42;
+  padding-top: 188px;
+  padding-bottom: 188px;
 }
 
 .hero-title {
@@ -101,6 +123,7 @@ a {
   text-align: center;
   color: #fff;
   text-transform: capitalize;
+  margin-bottom: 48px;
 }
 
 .hero-title span {
@@ -128,6 +151,7 @@ a {
 /* ----------------------FEATURES------------------ */
 
 .features {
+  padding: 120px 156px;
 }
 .features-title {
 }
@@ -136,6 +160,7 @@ a {
 .features-item {
 }
 .features-subtitle {
+  margin-bottom: 8px;
 }
 .features-description {
 }
@@ -144,8 +169,11 @@ a {
 
 .members {
   background-color: #f4f4fd;
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 .members-title {
+  margin-bottom: 72px;
 }
 .members-list {
 }
