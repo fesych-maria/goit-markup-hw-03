@@ -9,6 +9,7 @@ ul {
   list-style-type: none;
   margin-top: 0;
   margin-bottom: 0;
+  padding: 0;
 }
 
 a {
@@ -28,6 +29,12 @@ h6 {
   margin-bottom: 0;
 }
 
+img {
+  display: block;
+  min-width: 100%;
+  height: auto;
+}
+
 /* -------------- SHARED-STYLE -------------*/
 
 .section-title {
@@ -37,7 +44,7 @@ h6 {
   letter-spacing: 0.02em;
   text-align: center;
   color: #2e2f42;
-  text-transform: uppercase;
+  text-transform: capitalize;
 }
 
 .section-subtitle {
@@ -54,17 +61,45 @@ h6 {
 }
 
 .container {
-  width: 1158px;
+  max-width: 1158px;
   padding: 0 15px;
   margin: 0 auto;
 }
+
+.section {
+  padding: 120px 0;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 /* -------------- HEADER ------------------- */
 
 .header {
-  padding: 24px 0;
+  border-bottom: 1px solid #e7e9fc;
 }
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .header-navigation {
+  display: flex;
+  align-items: center;
 }
+
 .main-logo {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -74,10 +109,19 @@ h6 {
   text-transform: uppercase;
   color: #4d5ae5;
 }
+
 .header-logo {
   color: #2e2f42;
+  margin-right: 76px;
 }
+
+.header-logo-display {
+  padding: 24px 0 23px;
+}
+
 .header-list {
+  display: flex;
+  gap: 40px;
 }
 .header-item {
 }
@@ -86,6 +130,7 @@ h6 {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  padding: 24px 0 23px;
 }
 
 .header-link:hover,
@@ -99,12 +144,15 @@ h6 {
 .header-contacts {
 }
 .header-contacts-list {
+  display: flex;
+  gap: 40px;
 }
 .header-contacts-item {
 }
 .header-contacts-link {
   line-height: 1.5;
   letter-spacing: 0.02em;
+  padding: 24px 0;
 }
 
 /* --------------------- HERO ------------------ */
@@ -123,7 +171,8 @@ h6 {
   text-align: center;
   color: #fff;
   text-transform: capitalize;
-  margin-bottom: 48px;
+  max-width: 496px;
+  margin: 0 auto 48px;
 }
 
 .hero-title span {
@@ -139,6 +188,12 @@ h6 {
   color: #fff;
   background-color: #4d5ae5;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  padding: 16px 32px;
+  min-width: 169px;
+  height: 56px;
+  display: block;
+  margin: 0 auto;
 }
 
 .hero-btn:hover,
@@ -151,13 +206,15 @@ h6 {
 /* ----------------------FEATURES------------------ */
 
 .features {
-  padding: 120px 156px;
 }
 .features-title {
 }
 .features-list {
+  display: flex;
+  gap: 24px;
 }
 .features-item {
+  width: calc((100% - 3 * 24px) / 4);
 }
 .features-subtitle {
   margin-bottom: 8px;
@@ -169,23 +226,29 @@ h6 {
 
 .members {
   background-color: #f4f4fd;
-  padding-top: 120px;
-  padding-bottom: 120px;
 }
 .members-title {
   margin-bottom: 72px;
 }
 .members-list {
+  display: flex;
+  gap: 24px;
 }
 .members-item {
   box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
     0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
   background: #fff;
+  width: calc((100% - 3 * 24px) / 4);
+}
+
+.members-container {
+  padding: 32px 16px;
 }
 .members-image {
 }
 .members-subtitle {
   text-align: center;
+  margin-bottom: 8px;
 }
 .members-description {
   text-align: center;
@@ -196,26 +259,42 @@ h6 {
 .portfolio {
 }
 .portfolio-title {
+  margin-bottom: 72px;
 }
 .portfolio-list {
+  display: flex;
+  gap: 48px 24px;
+  flex-wrap: wrap;
 }
 .portfolio-item {
   background: #fff;
+  flex-basis: calc((100% - 48px) / 3);
 }
 .portfolio-image {
 }
 .portfolio-subtitle {
+  margin-bottom: 8px;
 }
 .portfolio-description {
+}
+
+.portfolio-text-container {
+  border-bottom: 1px solid #e7e9fc;
+  border-left: 1px solid #e7e9fc;
+  border-right: 1px solid #e7e9fc;
+  padding: 32px 0 32px 16px;
 }
 
 /* ----------------FOOTER-------------- */
 
 .footer {
   background-color: #2e2f42;
+  padding: 100px 0;
 }
 
-.main-logo {
+.footer-logo-display {
+  padding: 16px 0;
+  display: block;
 }
 
 .footer-logo {
@@ -226,4 +305,5 @@ h6 {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #f4f4fd;
+  max-width: 264px;
 }

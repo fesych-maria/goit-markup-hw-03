@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Webstudio</title>
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
       integrity="sha512-gnAN+RgTMylunXI7AMg+PtcUGpKZFkZJoFIkAWvdPFRrFJz3p2tx4+9xbjILRfN7CzoViMgS8vSf06fSQzWZjA=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
@@ -21,9 +21,9 @@
   </head>
   <body>
     <header class="header">
-      <div class="container">
+      <div class="container header-container">
         <nav class="header-navigation">
-          <a href="./index.html" class="main-logo"
+          <a href="./index.html" class="main-logo header-logo-display"
             >Web<span class="header-logo">Studio</span></a
           >
           <ul class="header-list">
@@ -66,8 +66,8 @@
         </div>
       </section>
       <section class="features">
-        <div class="container">
-          <h2 class="features-title section-title">Example</h2>
+        <div class="container section">
+          <h2 class="features-title section-title visually-hidden">Example</h2>
           <ul class="features-list">
             <li class="features-item">
               <h3 class="features-subtitle section-subtitle">Strategy</h3>
@@ -101,7 +101,7 @@
         </div>
       </section>
       <section class="members">
-        <div class="container">
+        <div class="container section">
           <h2 class="members-title section-title">Our Team</h2>
           <ul class="members-list">
             <li class="members-item">
@@ -166,7 +166,7 @@
         </div>
       </section>
       <section class="portfolio">
-        <div class="container">
+        <div class="container section">
           <h2 class="portfolio-title section-title">Our Portfolio</h2>
           <ul class="portfolio-list">
             <li class="portfolio-item">
@@ -177,8 +177,10 @@
                 height="300"
                 class="portfolio-image"
               />
-              <h3 class="portfolio-subtitle section-subtitle">Banking App</h3>
-              <p class="portfolio-description section-description">App</p>
+              <div class="portfolio-text-container">
+                <h3 class="portfolio-subtitle section-subtitle">Banking App</h3>
+                <p class="portfolio-description section-description">App</p>
+              </div>
             </li>
             <li class="portfolio-item">
               <img
@@ -188,10 +190,14 @@
                 height="300"
                 class="portfolio-image"
               />
-              <h3 class="portfolio-subtitle section-subtitle">
-                Cashless Payment
-              </h3>
-              <p class="portfolio-description section-description">Marketing</p>
+              <div class="portfolio-text-container">
+                <h3 class="portfolio-subtitle section-subtitle">
+                  Cashless Payment
+                </h3>
+                <p class="portfolio-description section-description">
+                  Marketing
+                </p>
+              </div>
             </li>
             <li class="portfolio-item">
               <img
@@ -201,10 +207,12 @@
                 height="300"
                 class="portfolio-image"
               />
-              <h3 class="portfolio-subtitle section-subtitle">
-                Meditation App
-              </h3>
-              <p class="portfolio-description section-description">App</p>
+              <div class="portfolio-text-container">
+                <h3 class="portfolio-subtitle section-subtitle">
+                  Meditation App
+                </h3>
+                <p class="portfolio-description section-description">App</p>
+              </div>
             </li>
             <li class="portfolio-item">
               <img
@@ -214,8 +222,14 @@
                 height="300"
                 class="portfolio-image"
               />
-              <h3 class="portfolio-subtitle section-subtitle">Taxi Service</h3>
-              <p class="portfolio-description section-description">Marketing</p>
+              <div class="portfolio-text-container">
+                <h3 class="portfolio-subtitle section-subtitle">
+                  Taxi Service
+                </h3>
+                <p class="portfolio-description section-description">
+                  Marketing
+                </p>
+              </div>
             </li>
             <li class="portfolio-item">
               <img
@@ -225,10 +239,12 @@
                 height="300"
                 class="portfolio-image"
               />
-              <h3 class="portfolio-subtitle section-subtitle">
-                Screen Illustrations
-              </h3>
-              <p class="portfolio-description section-description">Design</p>
+              <div class="portfolio-text-container">
+                <h3 class="portfolio-subtitle section-subtitle">
+                  Screen Illustrations
+                </h3>
+                <p class="portfolio-description section-description">Design</p>
+              </div>
             </li>
             <li class="portfolio-item">
               <img
@@ -238,10 +254,14 @@
                 height="300"
                 class="portfolio-image"
               />
-              <h3 class="portfolio-subtitle section-subtitle">
-                Online Courses
-              </h3>
-              <p class="portfolio-description section-description">Marketing</p>
+              <div class="portfolio-text-container">
+                <h3 class="portfolio-subtitle section-subtitle">
+                  Online Courses
+                </h3>
+                <p class="portfolio-description section-description">
+                  Marketing
+                </p>
+              </div>
             </li>
           </ul>
         </div>
@@ -249,7 +269,7 @@
     </main>
     <footer class="footer">
       <div class="container">
-        <a href="./index.html" class="main-logo"
+        <a href="./index.html" class="main-logo footer-logo-display"
           >Web<span class="footer-logo">Studio</span></a
         >
         <p class="footer-description">
